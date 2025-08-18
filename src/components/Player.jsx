@@ -5,7 +5,7 @@ export default function Player({ name, symbol, isActive }) {
   const [playerName, setPlayerName] = useState(name);
 
   return (
-    <li>
+    <li className={isActive ? "active" : undefined}>
       <span className="player">
         {isEditing ? (
           <form>
